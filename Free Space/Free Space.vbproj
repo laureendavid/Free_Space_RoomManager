@@ -539,6 +539,12 @@
     <Compile Include="reservationdisplay.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="reservationreports.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>reservationreports.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="RESOURCEROOM.Designer.vb">
       <DependentUpon>RESOURCEROOM.vb</DependentUpon>
     </Compile>
@@ -991,6 +997,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="reservationdisplay.resx">
       <DependentUpon>reservationdisplay.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reservationreports.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>reservationreports.vb</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="RESOURCEROOM.resx">
       <DependentUpon>RESOURCEROOM.vb</DependentUpon>

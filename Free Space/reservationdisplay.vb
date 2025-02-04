@@ -1,5 +1,5 @@
 ﻿Imports MySql.Data.MySqlClient
-
+Imports CrystalDecisions.CrystalReports.Engine
 Public Class reservationdisplay
     Private Sub reservationdisplay_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
@@ -77,5 +77,13 @@ Public Class reservationdisplay
 
     Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
 
+    End Sub
+
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+        reports.Show()
+        Dim cryRpt As New ReportDocument
+        cryRpt.Load("C:\Users\luka\source\repos\Free Space\Free Space\reservationreports.rpt")
+
+        reports.CrystalReportViewer1.ReportSource = cryRpt
     End Sub
 End Class

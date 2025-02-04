@@ -30,6 +30,7 @@ Partial Class reservationdisplay
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.Button5 = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
@@ -40,6 +41,7 @@ Partial Class reservationdisplay
         Me.Panel1.BackColor = System.Drawing.Color.Navy
         Me.Panel1.BackgroundImage = Global.Free_Space.My.Resources.Resources._14
         Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Panel1.Controls.Add(Me.Button5)
         Me.Panel1.Controls.Add(Me.Button4)
         Me.Panel1.Controls.Add(Me.Button3)
         Me.Panel1.Controls.Add(Me.Button2)
@@ -137,6 +139,20 @@ Partial Class reservationdisplay
         Me.Label1.TabIndex = 10
         Me.Label1.Text = "RESERVATIONS"
         '
+        'Button5
+        '
+        Me.Button5.BackColor = System.Drawing.Color.Indigo
+        Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button5.Font = New System.Drawing.Font("MV Boli", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button5.ForeColor = System.Drawing.Color.White
+        Me.Button5.Location = New System.Drawing.Point(413, 591)
+        Me.Button5.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(127, 57)
+        Me.Button5.TabIndex = 21
+        Me.Button5.Text = "SHOW REPORTS"
+        Me.Button5.UseVisualStyleBackColor = False
+        '
         'reservationdisplay
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -162,4 +178,5 @@ Partial Class reservationdisplay
     Friend WithEvents Button1 As Button
     Friend WithEvents Button4 As Button
     Friend WithEvents Button3 As Button
+    Friend WithEvents Button5 As Button
 End Class
